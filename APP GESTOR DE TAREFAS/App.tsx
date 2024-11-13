@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Alert, Modal, StyleSheet, Text, View, TextInput, TouchableOpacity, FlatList } from "react-native";
 import { Calendar, LocaleConfig } from 'react-native-calendars';
 
-// Configuração de idioma para o calendário
+
 LocaleConfig.locales['pt'] = {
   monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
   monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
@@ -16,7 +16,7 @@ LocaleConfig.locales['pt'] = {
 };
 LocaleConfig.defaultLocale = 'pt';
 
-// Tela de Tarefas
+
 function TaskScreen({ tasks, addTask, removeTask, editTask }) {
   const [newTask, setNewTask] = useState("");
   const [editingTask, setEditingTask] = useState(null);
@@ -80,7 +80,7 @@ function TaskScreen({ tasks, addTask, removeTask, editTask }) {
   );
 }
 
-// Tela de Calendário
+
 function CalendarScreen({ addTask }) {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedDate, setSelectedDate] = useState("");
@@ -93,7 +93,7 @@ function CalendarScreen({ addTask }) {
 
   function handleAddTask() {
     if (taskText.trim()) {
-      addTask(taskText, selectedDate);  // Salva a tarefa com a data
+      addTask(taskText, selectedDate);  
       setTaskText("");
       setModalVisible(false);
     } else {
@@ -111,10 +111,10 @@ function CalendarScreen({ addTask }) {
           todayTextColor: '#1c6cce',
           arrowColor: '#1c6cce',
         }}
-        onDayPress={(day) => openModal(day.dateString)} // Passa a data ao abrir o modal
+        onDayPress={(day) => openModal(day.dateString)} 
       />
 
-      {/* Modal para Adicionar Tarefa */}
+      
       <Modal
         visible={modalVisible}
         transparent={true}
@@ -143,7 +143,7 @@ function CalendarScreen({ addTask }) {
   );
 }
 
-// Tela de Configurações (Placeholder)
+
 function SettingsScreen() {
   return (
     <View style={styles.container}>
@@ -167,22 +167,22 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    AsyncStorage.setItem("tasks", JSON.stringify(tasks));  // Salva as tarefas no AsyncStorage
+    AsyncStorage.setItem("tasks", JSON.stringify(tasks));  
   }, [tasks]);
 
   function addTask(text, date = null) {
     const newTask = { text, date };
-    setTasks(prevTasks => [...prevTasks, newTask]);  // Adiciona a nova tarefa
+    setTasks(prevTasks => [...prevTasks, newTask]);  
   }
 
   function removeTask(taskToRemove) {
-    setTasks(prevTasks => prevTasks.filter(task => task !== taskToRemove));  // Remove a tarefa selecionada
+    setTasks(prevTasks => prevTasks.filter(task => task !== taskToRemove));  
   }
 
   function editTask(taskToEdit, newText) {
     setTasks(prevTasks => prevTasks.map(task => 
       task === taskToEdit ? { ...task, text: newText } : task
-    ));  // Atualiza o texto da tarefa
+    ));
   }
 
   return (
