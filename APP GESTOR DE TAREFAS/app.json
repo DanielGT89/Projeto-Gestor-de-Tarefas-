@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "gestordetarefa",
+    "slug": "gestordetarefa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./gestordetarefa/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./gestordetarefa/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./gestordetarefa/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./gestordetarefa/assets/favicon.png"
+    }
+    
+  }
+}
