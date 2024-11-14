@@ -1,6 +1,11 @@
 ![TypeScript](https://img.shields.io/badge/-TypeScript-yellow)
 ![React Native](https://img.shields.io/badge/-React%20Native-61dafb)
 ![Expo Go](https://img.shields.io/badge/-Expo%20Go-000000?style=for-the-badge&logo=expo)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript)
+![AsyncStorage](https://img.shields.io/badge/-AsyncStorage-333333?style=for-the-badge&logo=react)
+![react-native-calendars](https://img.shields.io/badge/-react--native--calendars-61dafb?style=for-the-badge&logo=react)
+![React Navigation](https://img.shields.io/badge/-React%20Navigation-61dafb?style=for-the-badge&logo=react)
+
 
 
 
