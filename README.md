@@ -1,5 +1,6 @@
 ![TypeScript](https://img.shields.io/badge/-TypeScript-yellow)
 ![React Native](https://img.shields.io/badge/-React%20Native-61dafb)
+![Expo Go](https://img.shields.io/badge/-Expo%20Go-000000?style=for-the-badge&logo=expo)
 
 
 
