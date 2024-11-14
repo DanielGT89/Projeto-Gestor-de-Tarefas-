@@ -1,3 +1,9 @@
+![TypeScript](https://img.shields.io/badge/-TypeScript-yellow)
+![React Native](https://img.shields.io/badge/-React%20Native-61dafb)
+
+
+
+
 Aplicativo de Gestão de Tarefas em React Native
 Este projeto visa o desenvolvimento de um aplicativo de gestão de tarefas, criado com o framework React Native. O aplicativo tem como objetivo oferecer uma solução intuitiva e prática para pessoas que precisam organizar suas tarefas diárias, como estudantes, profissionais e famílias. O sistema permite adicionar, editar e excluir tarefas, além de integrar um calendário para visualização das tarefas organizadas por data.
 
